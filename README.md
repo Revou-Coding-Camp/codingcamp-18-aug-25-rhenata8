@@ -55,6 +55,6 @@ Tidak ada proses instalasi yang rumit karena ini adalah proyek front-end murni.
 
 Aplikasi ini sudah di-hosting menggunakan GitHub Pages. Anda bisa mengaksesnya melalui link berikut:
 
-**[Lihat Live Demo](https://USERNAME.github.io/NAMA_REPOSITORY/)**
+**[Lihat Live Demo](revou-coding-camp.github.io.)**
 
-*(Jangan lupa ganti `USERNAME` dan `NAMA_REPOSITORY` dengan milik Anda setelah di-publish ke GitHub Pages)*
+
