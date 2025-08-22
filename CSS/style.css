@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #fccb90 0%, #ff9a9e 100%);
+    color: #444;
+    min-height: 100vh;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+
+.todo-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-input, .todo-date {
+    font-size: 1rem;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.todo-input {
+    flex-grow: 1; 
+}
+
+.todo-input:focus, .todo-date:focus {
+    border-color: #ff9a9e;
+}
+
+.add-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #ff9a9e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #e68a8e;
+}
+
+
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.filter-todo {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.todo-container {
+    width: 100%;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.todo-content {
+    flex-grow: 1;
+}
+
+.todo-item {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.todo-item-date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 4px;
+}
+
+.complete-btn, .trash-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.complete-btn {
+    color: #28a745; 
+    margin-left: 10px;
+}
+.complete-btn:hover {
+    color: #218838;
+}
+
+.trash-btn {
+    color: #dc3545; 
+}
+.trash-btn:hover {
+    color: #c82333;
+}
+
+.completed {
+    opacity: 0.6;
+}
+
+.completed .todo-item {
+    text-decoration: line-through;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
